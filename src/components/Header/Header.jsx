@@ -1,6 +1,7 @@
 import styles from './Header.module.css'
 
 export default function Header() {
+  console.log('BASE_URL:', import.meta.env.BASE_URL)
   return (
     <header className={styles.header}>
       <div className={styles.Header}>
