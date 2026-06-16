@@ -48,21 +48,29 @@
 
 @media (max-width: 768px) {
   .wrap {
-    text-align: right;
+    text-align: center;
+    width: 100%;
+    margin: auto;
   }
 
   .mobileWrap {
-    text-align: right;
+    text-align: center;
+    width: 100%;
+    margin: auto;
   }
 
   .word {
     display: block;
-    text-align: right;
+    text-align: center;
+    width: 100%;
+    margin: auto;
   }
 
   .mWord {
     display: block;
-    text-align: right;
+    text-align: center;
+    width: 100%;
+    margin: auto;
   }
 }
 

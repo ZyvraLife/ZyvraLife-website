@@ -9,16 +9,12 @@ export default function App() {
     <div className={styles.app}>
       <Header />
       <main className={styles.mainprin}>
-        <main className={styles.main}>
-          <section className={styles.left}>
-            <Hero />
-          </section>
-        </main>
-        <main className={styles.main1}>
-          <section className={styles.right}>
-            <WordAnimation />
-          </section>
-        </main>
+        <section className={styles.main}>
+          <Hero />
+        </section>
+        <section className={styles.main1}>
+          <WordAnimation />
+        </section>
       </main>
       <Footer />
     </div>

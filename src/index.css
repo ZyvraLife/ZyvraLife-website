@@ -4,8 +4,7 @@
 }
 
 html, body, #root {
-  height: 100%;
-  overflow: hidden;
+  min-height: 100dvh;
   background-color: #0F0E0D;
   color: #fff;
   font-family: 'Nunito Sans', sans-serif;
