@@ -1,0 +1,127 @@
+/* ── DESKTOP ─────────────────────────────────────────────────────── */
+.wrap {
+  position: relative;
+  width: 100%;
+  height: clamp(2.8rem, 4.5vw, 4.2rem);
+  overflow: visible;
+}
+
+.word {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* subtle fade-in when a word first appears */
+.wordEnter {
+  animation: enterWord 0.22s ease forwards;
+}
+
+@keyframes enterWord {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.68em;
+  background: currentColor;
+  flex-shrink: 0;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    text-align: right;
+  }
+
+  .mobileWrap {
+    text-align: right;
+  }
+
+  .word {
+    display: block;
+    text-align: right;
+  }
+
+  .mWord {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    font-size: 26px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .mobileWrap {
+    font-size: 26px;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .word {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .mWord {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+/* ── MOBILE ──────────────────────────────────────────────────────── */
+.mobileWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 3.5rem;
+}
+
+.mWord {
+  position: absolute;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 9vw, 3.5rem);
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1;
+}
+
+.mOff  { opacity: 0; }
+
+.mShow {
+  opacity: 1;
+  transition: opacity 0.36s ease;
+}
+
+.mHide {
+  opacity: 0;
+  transition: opacity 0.38s ease;
+}

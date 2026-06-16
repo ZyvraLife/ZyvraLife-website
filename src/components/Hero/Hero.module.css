@@ -1,0 +1,369 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 100%;
+}
+
+.TextCTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 48px;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+  line-height: 1;
+}
+
+.zyvra {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 900;
+  font-size: 110px;
+  color: #fff;
+  line-height: 132px;
+  letter-spacing: -11px;
+  text-transform: uppercase;
+}
+
+.life {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  color: #F5A623;
+  letter-spacing: 7.04px;
+  text-transform: uppercase;
+}
+
+.tagline {
+  display: flex;
+  gap: 24px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.amber {
+  color: #F5A623;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px 8px 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  opacity: 0.82;
+  transition: all 0.15s ease-in-out;
+}
+
+.btnFollow {
+  background: #BF00FF;
+  color: #fff;
+  border: none;
+}
+
+.btnThinking {
+  color: #F9F9F9;
+  border: none;
+  background-color: #2A2A28;
+}
+
+.btnThinking:hover {
+  background-color: #ffffff12;
+  opacity: 1;
+  transition: all 0.15s ease-in-out;
+}
+
+@media (max-width: 980px) {
+  .tagline {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: baseline;
+  }
+
+  .Pe {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    max-width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Pe {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .TextCTA {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 32px 12px 26px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.15s ease;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    line-height: 1;
+  }
+
+  .zyvra {
+    font-size: 84px;
+    line-height: 1;
+    letter-spacing: -4.4px;
+  }
+
+  .life {
+    font-size: 42px;
+  }
+
+  .TextCTA {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+  }
+
+  .tagline {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .Pe {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    line-height: 1;
+  }
+
+  .zyvra {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -4.4px;
+  }
+
+  .life {
+    font-size: 32px;
+  }
+
+  .TextCTA {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+  }
+
+  .tagline {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .Pe {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  .buttons {
+    width: 100%;
+
+  }
+
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    line-height: 1;
+  }
+
+  .zyvra {
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -4.4px;
+  }
+
+  .life {
+    font-size: 28px;
+  }
+
+  .TextCTA {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+  }
+
+  .tagline {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .Pe {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  .buttons {
+    width: 100%;
+
+  }
+
+  .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .icons {
+    display: none;
+  }
+}
+
+
+

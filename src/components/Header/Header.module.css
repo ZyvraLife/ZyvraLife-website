@@ -1,0 +1,201 @@
+.header {
+  height: 112px;
+  padding: 0 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0F0E0D;
+  border-bottom: 2px solid #1E1E1C;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logoImg {
+  position: absolute;
+  left: 0;
+  top: -44px;
+  height: 95px;
+  width: 95px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logoText {
+  position: absolute;
+  left: 89px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: 1;
+}
+
+.zyvra {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+  letter-spacing: -2.6px;
+  color: #fff;
+  line-height: 1;
+}
+
+.life {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1.32px;
+  color: #F5A623;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.btnDl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: none;
+  background: #2A2A28;
+  color: #fff;
+  padding: 8px 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.btnDl:hover {
+  background: #ffffff12;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 60px;
+  }
+
+  .btnDl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: none;
+    background: #2A2A28;
+    color: #fff;
+    padding: 12px 32px 12px 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    height: 112px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0F0E0D;
+    border-bottom: 2px solid #1E1E1C;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+
+  .Header {
+    justify-content: space-between;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .logoText {
+    position: static;
+  }
+
+  .btnDl span {
+    display: none;
+  }
+
+  .btnDl::after {
+    content: 'THE WORK';
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    height: 112px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #0F0E0D;
+    border-bottom: 2px solid #1E1E1C;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+
+  .Header {
+    justify-content: space-between;
+  }
+
+  .logoImg {
+    display: none;
+  }
+
+  .logoText {
+    position: static;
+  }
+
+  .btnDl span {
+    display: none;
+  }
+
+  .btnDl::after {
+    content: 'THE WORK';
+  }
+
+  .btnDl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: none;
+    background: #2A2A28;
+    color: #fff;
+    padding: 12px 26px 12px 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+  }
+}
+
+

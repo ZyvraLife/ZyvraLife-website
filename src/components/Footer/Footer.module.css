@@ -1,0 +1,40 @@
+.footer {
+  height: max-content;
+  padding: 0 96px 96px 96px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 60px 60px 60px;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer {
+    padding: 0 40px 40px 40px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .line1,
+  .line2 {
+    display: block;
+  }
+}
+
+.text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #8A8A8A;
+  line-height: 1.6;
+}
+
