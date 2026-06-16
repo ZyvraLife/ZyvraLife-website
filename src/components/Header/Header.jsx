@@ -5,7 +5,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.Header}>
         <a href="#" className={styles.logo}>
-          <img src="/logo.png" alt="ZyvraLife logo" className={styles.logoImg} />
+          <img src={import.meta.env.BASE_URL + 'logo.png'} alt="ZyvraLife logo" className={styles.logoImg} />
           <div className={styles.logoText}>
             <span className={styles.zyvra}>ZYVRA</span>
             <span className={styles.life}>LIFE</span>
