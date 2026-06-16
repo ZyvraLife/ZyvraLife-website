@@ -253,6 +253,20 @@
 }
 
 
+@media (max-width: 480px) {
+  .TextCTA {
+    gap: 48px;
+  }
+
+  .tagline {
+    margin-bottom: 8px;
+  }
+
+  .buttons {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 460px) {
   .hero {
     align-items: center;
@@ -280,7 +294,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 60px;
+    gap: 48px;
   }
 
   .tagline {
@@ -342,7 +356,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 80px;
+    gap: 48px;
   }
 
   .tagline {

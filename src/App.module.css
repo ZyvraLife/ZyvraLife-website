@@ -65,6 +65,10 @@
 }
 
 @media (max-width: 480px) {
+  .app {
+    --page-height: 720px;
+  }
+
   .mainprin {
     padding: 48px 24px;
   }
