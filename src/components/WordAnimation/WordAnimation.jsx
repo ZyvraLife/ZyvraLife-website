@@ -142,7 +142,7 @@ export default function WordAnimation() {
         const isPhase2 = isExit && item.exitPhase2
         const isPhase1 = isExit && item.exitPhase1 && !item.exitPhase2
 
-        const tx         = isPhase2 ? '-52vw' : isPhase1 ? '-24vw' : '0'
+        const tx         = isPhase2 ? '-90vw' : isPhase1 ? '-42vw' : '0'
         const opacity    = isPhase2 ? 0 : 1
         const transition = isPhase2
           ? `transform ${EXIT_MS}ms ease-in-out, opacity ${EXIT_MS}ms ease-in-out`
